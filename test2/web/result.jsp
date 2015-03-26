@@ -15,7 +15,8 @@
 <body>
     <% LinkedList<UrlBookModel> books = (LinkedList<UrlBookModel>)request.getAttribute("books"); %>
 
-    <table border="1">
+    <h1>显示结果(设为抓取置前100本书)</h1>
+    <center><table border="1">
         <tr>
             <td>书籍名称</td>
             <td>电子书价格</td>
@@ -32,7 +33,7 @@
                 }
             }
         %>
-    </table>
+    </table></center>
 
 
 

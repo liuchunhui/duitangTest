@@ -25,7 +25,7 @@ public class JsoupTool {
     public  LinkedList<UrlBookModel> extract(String key) throws IOException {
 
         // 取出搜索结果的前500本书籍的信息
-        for (int i = 0; i <= 500; i += 20) {
+        for (int i = 0; i <= 100; i += 20) {
             String URL = "http://book.douban.com/tag/" + key + "?start=" + i + "&type=T";
             Document doc = Jsoup.connect(URL).get();
 
