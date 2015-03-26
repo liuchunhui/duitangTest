@@ -7,13 +7,13 @@
 > **问题一:用至少两种方法实现方法字符串的逆序。比如输入abcdefg，返回 gfedcba**
 
 **思路一:**
-输入字符串,将字符串转换为char数组,利用for循环将char数组内的内容逆序.将char数组转换为字符串.
-代码:test1/src/test1/com/main/huihui/StringRollbackTool.java
-测试:test1/src/test1/com/main/huihui/StringRollbackTest.java
++ 输入字符串,将字符串转换为char数组,利用for循环将char数组内的内容逆序.将char数组转换为字符串.
++ 代码:test1/src/test1/com/main/huihui/StringRollbackTool.java
++ 测试:test1/src/test1/com/main/huihui/StringRollbackTest.java
 
 **思路二:**
-利用StringBuilder提供的reverse方法将字符串反转
-代码:test1/src/test1/com/main/huihui/StringRollbackTest.java
++ 利用StringBuilder提供的reverse方法将字符串反转
++ 代码:test1/src/test1/com/main/huihui/StringRollbackTest.java
 
 > **问题二:写一个 Web 应用，输入关键词（比如编程），将豆瓣搜索出来的书籍 http://book.douban.com/tag/%E7%BC%96%E7%A8%8B 列出来，并且将亚马逊 Kindle 版本购买价格查询出来**
 

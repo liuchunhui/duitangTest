@@ -18,11 +18,11 @@
 > **问题二:写一个 Web 应用，输入关键词（比如编程），将豆瓣搜索出来的书籍 http://book.douban.com/tag/%E7%BC%96%E7%A8%8B 列出来，并且将亚马逊 Kindle 版本购买价格查询出来**
 
 **思路:**
-0. 创建书籍的model,属性name,price,建立一个关于书籍model的LinkList
-1. 前端输入关键字,后台获取关键字,生成要访问的页面的URL
-2. 用Jsoup爬取URL网页内容,提取书籍名称和书籍的链接地址,然后根据提取出的链接在次爬取提取的链接,取出电子书的价格
-3. 将提取的书名和价格封装到书籍model对象,add到LinkList
-4. 将LinkList发送到页面,提取数据,展示数据.
++ 0.创建书籍的model,属性name,price,建立一个关于书籍model的LinkList
++ 1.前端输入关键字,后台获取关键字,生成要访问的页面的URL
++ 2.用Jsoup爬取URL网页内容,提取书籍名称和书籍的链接地址,然后根据提取出的链接在次爬取提取的链接,取出电子书的价格
++ 3.将提取的书名和价格封装到书籍model对象,add到LinkList
++ 4.将LinkList发送到页面,提取数据,展示数据.
 
 **代码:**
 + 书籍model:/test2/src/com/main/huihui/tool/UrlBookModel.java
@@ -33,11 +33,11 @@
 > **问题三:读取网页 http://taoduanfang.baijia.baidu.com/article/40410 的正文, 算出其中出现次数最多的词汇, “的”, “我们”, “你们”之类的常见词不算, 取 top10 即可**
 
 **思路:**
-0. 根据提供的具体网页,用Jsoup抓取页面信息.
-1. 利用je-analysis进行中文分词
-2. 将分离出的词汇存储到TreeMap中,词汇为key,出现的次数为value.
-3. 将TreeMap转换为ArrayList,根据value的值进行从大到小的排序.
-4. 读取前十个出现次数最多的词汇
++ 0.根据提供的具体网页,用Jsoup抓取页面信息.
++ 1.利用je-analysis进行中文分词
++ 2.将分离出的词汇存储到TreeMap中,词汇为key,出现的次数为value.
++ 3.将TreeMap转换为ArrayList,根据value的值进行从大到小的排序.
++ 4.读取前十个出现次数最多的词汇
 
 **代码:**
 
